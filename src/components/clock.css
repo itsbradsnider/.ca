@@ -1,0 +1,79 @@
+
+.clock-container {
+    float: left;
+    margin: 15px;
+  }
+
+
+.clock-face {
+
+    height: 20vh;
+    width: 20vh;
+    border: solid 2px black;
+    border-radius: 50%;
+    position: relative;
+    background-color: aqua;
+}
+
+.clock-hand {
+    height: 9.5vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    transform-origin: top;
+    border-radius: 50%;
+
+}
+
+.clock-hand.--hour {
+
+    height: 6vh;
+    transform: rotate(180deg);
+    width: 4px;
+}
+
+.clock-hand.--minute {
+
+    height: 9vh;
+    transform : rotate(212deg);
+    width: 4px;
+}
+
+.clock-hand.--second {
+
+    height: 9.5vh;
+    transform: rotate(17deg);
+    width: 1px;
+}
+
+.tick-container {
+
+    background-color: transparent !important;
+    height: 9vh;
+}
+
+.tick {
+    height: 10%;
+    background-color: black;
+    width: 3px;
+    position: absolute;
+    top: 100%;
+}
+  
+  .clock-name {
+    font-family: "Poppins";
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .clock-center {
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: black;
+      position: absolute;
+      top: 47%;
+      left: 47%;
+  }
+  
